@@ -31,6 +31,7 @@ InitialData:
     FileGlob: "{{ IdFileGlob }}"
     Subgroup: "VolumeData"
     ObservationValue: Last
+    ObservationValueEpsilon: Auto
     Interpolate: True
     Variables:
       Lapse: Lapse
@@ -327,6 +328,7 @@ EventsAndTriggers:
           # for visualization.
           CoordinatesFloatingPointType: Float
           FloatingPointTypes: [Float]
+          BlocksToObserve: All
   # Try to find common horizon at small separation
   - Trigger:
       SeparationLessThan:

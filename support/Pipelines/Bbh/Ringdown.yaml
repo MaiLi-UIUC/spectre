@@ -17,6 +17,7 @@ InitialData:
     FileGlob: "{{ IdFileGlob }}"
     Subgroup: "VolumeData"
     ObservationValue: Last
+    ObservationValueEpsilon: Auto
     Interpolate: True
     Variables:
       SpacetimeMetric: SpacetimeMetric
@@ -190,6 +191,7 @@ EventsAndTriggers:
           InterpolateToMesh: None
           CoordinatesFloatingPointType: Double
           FloatingPointTypes: [Double]
+          BlocksToObserve: All
       - ApparentHorizon
       - ExcisionBoundary
   # Never terminate... run until something fails!
